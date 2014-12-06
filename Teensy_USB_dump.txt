@@ -1,0 +1,94 @@
+********************************
+Host Teensy:
+********************************
+
+attach
+GET DEVICE DESCRIPTOR
+setup phase
+tx0: 80 06 00 01 00 00 40 00 ,0008
+TOKDNE. Pid: 02, count: 08. Data: 01000680, 00400000
+data phase
+rx: 0040
+TOKDNE. Pid: 0B, count: 12. Data: 02000112, 400102EF
+data in: 12 01 00 02 EF 02 01 40 C0 16 87 04 00 01 01 02 03 01
+status phase
+tx0: ,0000
+TOKDNE. Pid: 02, count: 40. Data: 00000000, 00000000
+RESET
+RESET DONE
+SET_ADDRESS to 1
+setup phase
+tx0: 00 05 01 00 00 00 00 00 ,0008
+TOKDNE. Pid: 02, count: 00. Data: 20008000, 000001BD
+status phase
+rx: 0000
+TOKDNE. Pid: 0B, count: 00. Data: 20008000, 000001BD
+GET DEVICE DESCRIPTOR
+setup phase
+tx0: 80 06 00 01 00 00 40 00 ,0008
+TOKDNE. Pid: 00, count: 08. Data: 01000680, 00400000
+data phase
+rx: 0040
+TOKDNE. Pid: 00, count: 00. Data: 02000112, 400102EF
+data in:
+status phase
+tx0: ,0000
+TOKDNE. Pid: 00, count: 08. Data: 01000600, 00400000
+err:30
+attach
+GET DEVICE DESCRIPTOR
+setup phase
+tx0: 80 06 00 01 00 00 40 00 ,0008
+TOKDNE. Pid: 02, count: 00. Data: 20008000, 000001BD
+data phase
+rx: 0040
+TOKDNE. Pid: 0B, count: 12. Data: 02000112, 400102EF
+data in: 12 01 00 02 EF 02 01 40 C0 16 87 04 00 01 01 02 03 01
+status phase
+tx0: ,0000
+TOKDNE. Pid: 02, count: 00. Data: 20008000, 000001BD
+RESET
+RESET DONE
+SET_ADDRESS to 1
+setup phase
+tx0: 00 05 01 00 00 00 00 00 ,0008
+TOKDNE. Pid: 02, count: 08. Data: 00010500, 00000000
+status phase
+rx: 0000
+TOKDNE. Pid: 0B, count: 00. Data: 20008000, 000001BD
+GET DEVICE DESCRIPTOR
+setup phase
+tx0: 80 06 00 01 00 00 40 00 ,0008
+TOKDNE. Pid: 02, count: 08. Data: 01000680, 00400000
+data phase
+rx: 0040
+TOKDNE. Pid: 0B, count: 12. Data: 02000112, 400102EF
+data in: 12 01 00 02 EF 02 01 40 C0 16 87 04 00 01 01 02 03 01
+status phase
+tx0: ,0000
+
+
+********************************
+Device Teensy:
+********************************
+
+reset
+TOKDNE. Pid: 0D, count: 08. Data: 01000680, 00400000
+tx0: 12 01 00 02 EF 02 01 40 C0 16 87 04 00 01 01 02 03 01 ,0012
+TOKDNE. Pid: 09, count: 12. Data: 02000112, 400102EF
+TOKDNE. Pid: 01, count: 40. Data: 00000000, 00000000
+reset
+TOKDNE. Pid: 0D, count: 00. Data: 01000680, 00400000
+tx0: 12 01 00 02 EF 02 01 40 C0 16 87 04 00 01 01 02 03 01 ,0012
+TOKDNE. Pid: 09, count: 12. Data: 02000112, 400102EF
+reset
+TOKDNE. Pid: 0D, count: 00. Data: 01000680, 00400000
+tx0: 12 01 00 02 EF 02 01 40 C0 16 87 04 00 01 01 02 03 01 ,0012
+TOKDNE. Pid: 09, count: 12. Data: 02000112, 400102EF
+reset
+TOKDNE. Pid: 0D, count: 08. Data: 00010500, 00000000
+tx0: ,0000
+TOKDNE. Pid: 09, count: 00. Data: 20008000, 000001BD
+TOKDNE. Pid: 0D, count: 08. Data: 01000680, 00400000
+tx0: 12 01 00 02 EF 02 01 40 C0 16 87 04 00 01 01 02 03 01 ,0012
+TOKDNE. Pid: 09, count: 12. Data: 02000112, 400102EF
